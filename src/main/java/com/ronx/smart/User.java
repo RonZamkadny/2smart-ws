@@ -1,4 +1,4 @@
-package co.ronx;
+package com.ronx.smart;
 
 public class User {
     private long id;

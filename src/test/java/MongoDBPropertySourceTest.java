@@ -1,5 +1,5 @@
-import co.ronx.MongoDBPropertySource;
-import co.ronx.configuration.MongoDBConfig;
+import com.ronx.smart.MongoDBPropertySource;
+import com.ronx.smart.configuration.MongoDBConfig;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -43,9 +43,9 @@ public class MongoDBPropertySourceTest {
     public void given_property_exists_when_property_is_removed_then_null_should_be_returned() throws Exception {
         String property = "someProperty";
         String value = "someValue";
-        co.ronx.MongoDBPropertySource.Property propertyObject = new co.ronx.MongoDBPropertySource.Property(property, value);
+        com.ronx.smart.MongoDBPropertySource.Property propertyObject = new com.ronx.smart.MongoDBPropertySource.Property(property, value);
         mongo.save(propertyObject);
-        co.ronx.MongoDBPropertySource tested = new co.ronx.MongoDBPropertySource(mongo, 1L);
+        com.ronx.smart.MongoDBPropertySource tested = new com.ronx.smart.MongoDBPropertySource(mongo, 1L);
         Thread.sleep(10);
         mongo.remove(propertyObject);
         assertEquals(false, tested.containsProperty(property));
@@ -54,11 +54,11 @@ public class MongoDBPropertySourceTest {
 
 /*    @Test
     public void given_property_exists_when_changed_then_it_should_be_updated_after_timeout() throws Exception {
-        co.ronx.MongoDBPropertySource tested = new co.ronx.MongoDBPropertySource(mongo, 1L);
+        com.ronx.smart.MongoDBPropertySource tested = new com.ronx.smart.MongoDBPropertySource(mongo, 1L);
 
         String property = "someProperty";
         String value = "someValue";
-        co.ronx.MongoDBPropertySource.Property propertyObject = new co.ronx.MongoDBPropertySource.Property(property, value);
+        com.ronx.smart.MongoDBPropertySource.Property propertyObject = new com.ronx.smart.MongoDBPropertySource.Property(property, value);
         mongo.save(propertyObject);
 
         String updatedValue = "updatedValue";

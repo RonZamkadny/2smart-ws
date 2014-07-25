@@ -1,6 +1,6 @@
-package co.ronx;
+package com.ronx.smart;
 
-import co.ronx.configuration.RestWebConfig;
+import com.ronx.smart.configuration.RestWebConfig;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;

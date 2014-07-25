@@ -1,4 +1,4 @@
-package co.ronx.configuration;
+package com.ronx.smart.configuration;
 
 import com.mongodb.Mongo;
 import org.slf4j.Logger;

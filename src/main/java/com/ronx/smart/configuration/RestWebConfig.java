@@ -1,6 +1,6 @@
-package co.ronx.configuration;
+package com.ronx.smart.configuration;
 
-import co.ronx.User;
+import com.ronx.smart.User;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

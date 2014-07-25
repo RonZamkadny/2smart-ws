@@ -1,4 +1,4 @@
-package co.ronx;
+package com.ronx.smart;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.PropertySource;

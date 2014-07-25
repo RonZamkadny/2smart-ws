@@ -1,4 +1,4 @@
-package co.ronx;
+package com.ronx.smart;
 
 import org.springframework.web.bind.annotation.*;
 
