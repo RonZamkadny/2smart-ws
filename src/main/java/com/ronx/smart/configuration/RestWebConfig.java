@@ -10,7 +10,7 @@ import org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguratio
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @Configuration
-@ComponentScan("co.ronx")
+@ComponentScan("com.ronx.smart")
 @Import({RepositoryRestMvcConfiguration.class, MongoDBConfig.class})
 @EnableWebMvc
 @EnableAutoConfiguration
