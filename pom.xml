@@ -7,6 +7,7 @@
     <groupId>com.ronx.2smart</groupId>
     <artifactId>ws</artifactId>
     <version>0.1-SNAPSHOT</version>
+    <packaging>war</packaging>
     <properties>
         <org.springframework.version>4.0.6.RELEASE</org.springframework.version>
     </properties>
@@ -103,8 +104,20 @@
             <version>14.0.1</version>
         </dependency>
 
-
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 
 </project>
