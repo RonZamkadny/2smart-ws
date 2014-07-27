@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("/x")
 public class FrontController {
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
